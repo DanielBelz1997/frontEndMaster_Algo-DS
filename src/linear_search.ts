@@ -6,6 +6,7 @@ export default function linearSearch(arr: number[], needle: number): boolean {
   }
   return false;
 }
-//ddd
 
-console.log(linearSearch([4, 8, 7, 8, 7, 9, 9, 9, 8, 9], 5));
+const arr = [4, 8, 7, 8, 7, 9, 9, 9, 8, 9];
+const needle = 6;
+console.log(linearSearch(arr, needle));
