@@ -16,8 +16,6 @@ export default function bs_list(arr: number[], needle: number): boolean {
   return false;
 }
 
-console.log(bs_list([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 9));
-
 // high is exlusive. low is inclusive. [low, high)
 // example:
 // arr = [1,2,3,4,5,6,7,8,9,10]

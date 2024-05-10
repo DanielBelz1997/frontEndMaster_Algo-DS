@@ -1,4 +1,4 @@
-import bs_list from "../../src/binary_search";
+import bs_list from "../../src/search/binary_search";
 
 describe("binary search test", () => {
   it("should return true. needle is there", () => {

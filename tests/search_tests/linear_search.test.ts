@@ -1,4 +1,4 @@
-import linearSearch from "../../src/linear_search"; // Assuming your function is in linearSearch.js
+import linearSearch from "../../src/search/linear_search"; // Assuming your function is in linearSearch.js
 
 describe("linearSearch", () => {
   it("should return true if the needle is found in the array", () => {
