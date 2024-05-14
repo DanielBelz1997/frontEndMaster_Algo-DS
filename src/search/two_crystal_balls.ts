@@ -18,3 +18,23 @@ export default function two_crystal_balls(breaks: boolean[]): number {
 }
 
 // running time: O(root of n)
+
+export function copy(arr: boolean[]): number {
+  const jmpAmount = Math.floor(Math.sqrt(arr.length));
+
+  let i = jmpAmount;
+
+  for (; i < arr.length; i += jmpAmount) {
+    if (arr[i]) {
+      break;
+    }
+  }
+  i -= jmpAmount;
+
+  for (let j = 0; j < jmpAmount && i < arr.length; ++j, ++i) {
+    if (arr[i]) {
+      return i;
+    }
+  }
+  return -1;
+}
