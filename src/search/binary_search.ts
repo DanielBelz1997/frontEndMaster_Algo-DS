@@ -1,3 +1,9 @@
+/**
+ *
+ * @param arr - Array to search on.
+ * @param needle - The searched number.
+ * @returns {boolean} boolean - Whether the number is found or not.
+ */
 export default function bs_list(arr: number[], needle: number): boolean {
   let low = 0;
   let high = arr.length;
@@ -16,11 +22,11 @@ export default function bs_list(arr: number[], needle: number): boolean {
   return false;
 }
 
-// high is exlusive. low is inclusive. [low, high)
+// high is exclusive. low is inclusive. [low, high)
 // example:
 // arr = [1,2,3,4,5,6,7,8,9,10]
 // n = 9
 // m = Math.floor(low + (high - low) / 2)
 // checked if n = arr[m]
 // not equal? but bigger? the start from *6*, means start from  m + 1. because 5 is checked (middle).
-// not equal? but smaller? take the high to m. so end with 5. to divide the array length by 2
+// not equal? but smaller? take the high to m. so end with 5. to divide the array length by 2s

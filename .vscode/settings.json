@@ -1,3 +1,4 @@
 {
-  "conventionalCommits.scopes": ["i"]
+  "conventionalCommits.scopes": ["i"],
+  "cSpell.words": ["nums"]
 }
